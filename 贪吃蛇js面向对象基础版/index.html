@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+<!--游戏地图-->
+<div id="map"></div>
+<!--游戏开始与清除-->
+<button id="open">开始游戏</button>
+<button id="clear">清除游戏</button>
+<!--游戏计分栏-->
+<div id="point">
+  <div id="point_top">
+    <p>分 数</p>
+  </div>
+  <div id="point_num">
+    <p>0</p>
+  </div>
+  <div id="point_buttom">
+    <p>最高分: 156</p>
+  </div>
+</div>
+<!--游戏模式选择-->
+<div class="model">
+  <p>游戏模式</p>
+  <select id="grade">
+    <option value="easy">简 单</option>
+    <option value="medium">中 等</option>
+    <option value="hard">困 难</option>
+    <option value="hell">地 狱</option>
+  </select>
+</div>
+
+<!--引入food对象-->
+<script src="JavaScript/food.js"></script>
+<!--引入snake对象-->
+<script src="JavaScript/snake.js"></script>
+<!--引入game对象-->
+<script src="JavaScript/game.js"></script>
+<script src="JavaScript/open.js"></script>
+</body>
+</html>
